@@ -13,11 +13,12 @@ const App = ({ store }) => {
         handleClick={() => store.dispatch({ type: "GOOD" })}
         text="good"
       />
-      <Button
-        handleClick={() => store.dispatch({ type: "OK" })}
-        text="neutral"
-      />
+      <Button handleClick={() => store.dispatch({ type: "OK" })} text="ok" />
       <Button handleClick={() => store.dispatch({ type: "BAD" })} text="bad" />
+      <Button
+        handleClick={() => store.dispatch({ type: "ZERO" })}
+        text="reset stats"
+      />
       <Statistics state={store.getState()} />
     </div>
   );

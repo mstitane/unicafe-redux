@@ -15,7 +15,7 @@ const Statistics = ({ state }) => {
       <table>
         <tbody>
           <StatisticLine text="good" value={state.good} />
-          <StatisticLine text="neutral" value={state.ok} />
+          <StatisticLine text="ok" value={state.ok} />
           <StatisticLine text="bad" value={state.bad} />
           <StatisticLine text="all" value={all} />
           <StatisticLine
